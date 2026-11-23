@@ -13,6 +13,12 @@ import { LOGO_URL } from '../../data/menuData';
 
 export function QrCodeManager() {
   const [menuUrl, setMenuUrl] = useState<string>(() => {
+    if (
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1'
+    ) {
+      return 'https://menu-mundo-alegria.pages.dev';
+    }
     return window.location.origin;
   });
   const [qrDataUrl, setQrDataUrl] = useState<string>('');
