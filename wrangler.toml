@@ -1,0 +1,8 @@
+name = "menu-mundo-alegria"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# El binding MUNDO_ALEGRIA_KV se vinculará con el ID generado en tu cuenta de Cloudflare:
+# [[kv_namespaces]]
+# binding = "MUNDO_ALEGRIA_KV"
+# id = "<KV_NAMESPACE_ID>"

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" role="img" aria-label="Restaurante Mundo Alegría Logo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e62b8" />
+      <stop offset="50%" stop-color="#0a529e" />
+      <stop offset="100%" stop-color="#063e79" />
+    </linearGradient>
+    <radialGradient id="highlightGrad" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0a529e" stop-opacity="0" />
+    </radialGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="letterShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="2" flood-color="#78350f" flood-opacity="0.45" />
+    </filter>
+    <path id="topArc" d="M 90 250 A 160 160 0 0 1 410 250" fill="none" />
+    <path id="bottomArc" d="M 100 265 A 155 155 0 0 0 400 265" fill="none" />
+  </defs>
+
+  <!-- Main Circular Badge -->
+  <circle cx="250" cy="250" r="235" fill="url(#bgGrad)" filter="url(#dropShadow)" />
+  <circle cx="250" cy="250" r="235" fill="url(#highlightGrad)" />
+  <!-- Outer Ring -->
+  <circle cx="250" cy="250" r="226" fill="none" stroke="#ffffff" stroke-width="7" />
+  <!-- Inner Subtle Ring -->
+  <circle cx="250" cy="250" r="217" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+
+  <!-- Top Curved Text: RESTAURANTE -->
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="28" letter-spacing="7">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      RESTAURANTE
+    </textPath>
+  </text>
+
+  <!-- Center Decorative Glow/Badge Base -->
+  <ellipse cx="250" cy="240" rx="195" ry="110" fill="#ffffff" opacity="0.15" />
+
+  <!-- 3D Bubble Text: MUNDO -->
+  <g transform="translate(0, -10)" filter="url(#letterShadow)">
+    <!-- White border backing for MUNDO -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78" stroke="#ffffff" stroke-width="16" stroke-linejoin="round" stroke-linecap="round">
+      <text x="65" y="215">M</text>
+      <text x="145" y="215">U</text>
+      <text x="210" y="215">N</text>
+      <text x="280" y="215">D</text>
+    </g>
+    <!-- Outer Golden stroke -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78" stroke="#d97706" stroke-width="6" stroke-linejoin="round">
+      <text x="65" y="215">M</text>
+      <text x="145" y="215">U</text>
+      <text x="210" y="215">N</text>
+      <text x="280" y="215">D</text>
+    </g>
+    <!-- Colored fill -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78">
+      <text x="65" y="215" fill="#ec4899">M</text>
+      <text x="145" y="215" fill="#f59e0b">U</text>
+      <text x="210" y="215" fill="#f97316">N</text>
+      <text x="280" y="215" fill="#eab308">D</text>
+    </g>
+    
+    <!-- Character Planet Earth for the 'O' -->
+    <g transform="translate(380, 185)">
+      <!-- Backing white outline -->
+      <circle cx="0" cy="0" r="42" fill="#ffffff" stroke="#ffffff" stroke-width="10" />
+      <circle cx="0" cy="0" r="40" fill="#38bdf8" stroke="#d97706" stroke-width="4" />
+      <!-- Continents -->
+      <path d="M -25 -10 Q -10 -25 5 -15 Q 15 -5 5 15 Q -10 20 -25 -10 Z" fill="#22c55e" opacity="0.9" />
+      <path d="M 12 -28 Q 28 -20 25 5 Q 15 5 12 -28 Z" fill="#22c55e" opacity="0.9" />
+      <path d="M -15 25 Q 5 18 15 32 Q -5 38 -15 25 Z" fill="#22c55e" opacity="0.9" />
+      <!-- Happy Smiling Eyes -->
+      <ellipse cx="-12" cy="-6" rx="5" ry="7" fill="#0f172a" />
+      <circle cx="-14" cy="-8" r="2.2" fill="#ffffff" />
+      <ellipse cx="12" cy="-6" rx="5" ry="7" fill="#0f172a" />
+      <circle cx="10" cy="-8" r="2.2" fill="#ffffff" />
+      <!-- Rosy Cheeks -->
+      <circle cx="-20" cy="8" r="4" fill="#f43f5e" opacity="0.7" />
+      <circle cx="20" cy="8" r="4" fill="#f43f5e" opacity="0.7" />
+      <!-- Happy Open Smile -->
+      <path d="M -12 8 Q 0 20 12 8 Z" fill="#b91c1c" />
+      <path d="M -6 12 Q 0 16 6 12 Z" fill="#fb7185" />
+      <!-- Waving little hands -->
+      <path d="M 35 -15 Q 48 -25 45 -10" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none" />
+      <path d="M -35 -15 Q -48 -25 -45 -10" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none" />
+    </g>
+  </g>
+
+  <!-- 3D Bubble Text: ALEGRÍA -->
+  <g transform="translate(0, 45)" filter="url(#letterShadow)">
+    <!-- White border backing for ALEGRIA -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78" stroke="#ffffff" stroke-width="16" stroke-linejoin="round" stroke-linecap="round">
+      <text x="50" y="270">A</text>
+      <text x="115" y="270">L</text>
+      <text x="165" y="270">E</text>
+      <text x="220" y="270">G</text>
+      <text x="285" y="270">R</text>
+      <text x="345" y="270">Í</text>
+      <text x="375" y="270">A</text>
+    </g>
+    <!-- Golden orange outline -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78" stroke="#d97706" stroke-width="6" stroke-linejoin="round">
+      <text x="50" y="270">A</text>
+      <text x="115" y="270">L</text>
+      <text x="165" y="270">E</text>
+      <text x="220" y="270">G</text>
+      <text x="285" y="270">R</text>
+      <text x="345" y="270">Í</text>
+      <text x="375" y="270">A</text>
+    </g>
+    <!-- Colored letters -->
+    <g font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="78">
+      <text x="50" y="270" fill="#22c55e">A</text>
+      <text x="115" y="270" fill="#facc15">L</text>
+      <text x="165" y="270" fill="#f97316">E</text>
+      <text x="220" y="270" fill="#eab308">G</text>
+      <text x="285" y="270" fill="#fb923c">R</text>
+      <text x="345" y="270" fill="#10b981">Í</text>
+      <text x="375" y="270" fill="#ef4444">A</text>
+    </g>
+    
+    <!-- Playground Slide Icon emerging from the 'A' -->
+    <g transform="translate(370, 245)">
+      <!-- Slide Ladder -->
+      <line x1="12" y1="-10" x2="12" y2="40" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round" />
+      <line x1="8" y1="10" x2="16" y2="10" stroke="#f59e0b" stroke-width="3" />
+      <line x1="8" y1="25" x2="16" y2="25" stroke="#f59e0b" stroke-width="3" />
+      <!-- Slide Chute (Red & Blue with Green rails) -->
+      <path d="M 12 -5 C 25 15, 30 25, 60 55" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" />
+      <path d="M 12 -5 C 25 15, 30 25, 60 55" stroke="#ef4444" stroke-width="8" stroke-linecap="round" fill="none" />
+      <path d="M 15 -2 C 28 17, 33 27, 63 57" stroke="#3b82f6" stroke-width="5" stroke-linecap="round" fill="none" />
+      <path d="M 10 -6 C 22 13, 27 23, 56 52" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    </g>
+  </g>
+
+  <!-- Bottom Curved Text: Heladería & Diversión -->
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="29" letter-spacing="2">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      Heladería &amp; Diversión
+    </textPath>
+  </text>
+</svg>

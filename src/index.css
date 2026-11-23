@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+}
+
+.font-brand,
+.font-heading,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", "Nunito", sans-serif;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .app-print-root {
+    background-color: #ffffff !important;
+    background-image: url("/assets/tapiz-fast-food.png") !important;
+    background-repeat: repeat !important;
+    background-size: 280px 280px !important;
+    padding: 8mm 10mm 10mm 10mm !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #navegacion-categorias,
+  #menu-footer,
+  .print-hide,
+  .web-only-action {
+    display: none !important;
+  }
+
+  .pdf-only-action {
+    display: inline-flex !important;
+    text-decoration: none !important;
+  }
+
+  #recuadro-versiculo-biblico {
+    background-color: #ffffff !important;
+  }
+
+  section > div:first-child {
+    background-color: #ffffff !important;
+    padding: 6px 12px !important;
+    border-radius: 12px !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  .product-print-card {
+    background-color: #ffffff !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08) !important;
+    flex-direction: row !important;
+    width: 92% !important;
+  }
+
+  .product-print-card.self-end {
+    flex-direction: row-reverse !important;
+    margin-left: auto !important;
+  }
+
+  .product-print-card.self-start {
+    margin-right: auto !important;
+  }
+
+  .product-print-image {
+    width: 11.5rem !important;
+    height: 8.75rem !important;
+  }
+}
